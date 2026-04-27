@@ -424,7 +424,7 @@ async function submitForm(){
   const b=document.getElementById('sendBtn');b.disabled=true;b.textContent='Opening...';
   saveSheet({name,phone,age,gender,profession,source});
   if(typeof fbq!=='undefined')fbq('track','Lead');
-  const msg=`Hello Ma'am,\n\nI am interested in joining your program.\n\nName: ${name}\nPhone: ${phone}\nAge: ${age}\nGender: ${gender}\nProfession: ${profession}\n\nPlease next steps batayein. Shukriya!`;
+  const msg=`Hello Ma'am,\n\nI am interested in this work. Here are my details:\n\nName: ${name}\nPhone: ${phone}\nAge: ${age}\nGender: ${gender}\nProfession: ${profession}\n\nPlease share next steps. Thank you!`;
   setTimeout(()=>{window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`,'_blank');setTimeout(()=>closeM('formModal'),600);},600);
 }
 async function saveSheet(d){
