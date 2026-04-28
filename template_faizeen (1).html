@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CLIENT_NAME – Learn, Earn & Shine ✨ | Women Community</title>
+<meta name="description" content="CLIENT_NAME – Online Earning Coach for Women"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','PIXEL_ID');fbq('track','PageView');</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;overflow-x:hidden;}
+:root{
+  --pink:#e91e8c;
+  --pink2:#f050a8;
+  --pink3:#ffd6ee;
+  --purple:#7c3aed;
+  --purple2:#9f5ff0;
+  --bg:#fff9fc;
+  --bg2:#fff0f8;
+  --dark:#1a0a12;
+  --dark2:#2d1a24;
+  --muted:#8a6070;
+  --white:#ffffff;
+}
+body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--dark);overflow-x:hidden;line-height:1.6;}
+img{display:block;max-width:100%;}
+::-webkit-scrollbar{width:4px;}
+::-webkit-scrollbar-thumb{background:linear-gradient(var(--pink),var(--purple));}
+
+/* ── MODAL ── */
+.ov{display:none;position:fixed;inset:0;background:rgba(26,10,18,.88);z-index:9999;align-items:center;justify-content:center;padding:16px;backdrop-filter:blur(12px);}
+.ov.on{display:flex;}
+.pbox{background:var(--white);border-radius:16px;padding:28px;max-width:460px;width:100%;position:relative;max-height:88vh;overflow-y:auto;}
+.pbox h3{color:var(--pink);font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin:12px 0 4px;}
+.pbox h3:first-of-type{margin-top:0;}
+.pbox p{color:var(--muted);font-size:.82rem;line-height:1.7;}
+.mcls{position:absolute;top:12px;right:16px;background:none;border:none;color:var(--muted);font-size:22px;cursor:pointer;line-height:1;}
+.mcls:hover{color:var(--dark);}
+
+/* FORM */
+.fbox{background:var(--white);border-radius:20px;padding:32px 26px;max-width:440px;width:100%;position:relative;box-shadow:0 32px 80px rgba(233,30,140,.15);}
+.ftitle{font-size:1.4rem;font-weight:800;color:var(--dark);text-align:center;margin-bottom:2px;}
+.fsub{font-size:.75rem;color:var(--muted);text-align:center;margin-bottom:20px;}
+.fg{margin-bottom:12px;}
+.fg label{display:block;font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--pink);margin-bottom:5px;}
+.fg input,.fg select{width:100%;padding:11px 14px;background:var(--bg2);border:1.5px solid #ffd6ee;border-radius:10px;font-family:'Poppins',sans-serif;font-size:.88rem;color:var(--dark);outline:none;transition:border-color .2s;-webkit-appearance:none;}
+.fg input::placeholder{color:#c0a0b0;}
+.fg select option{background:var(--white);}
+.fg input:focus,.fg select:focus{border-color:var(--pink);}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.fsend{width:100%;padding:14px;background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff;font-family:'Poppins',sans-serif;font-size:1rem;font-weight:700;border:none;border-radius:12px;margin-top:8px;cursor:pointer;transition:all .25s;letter-spacing:.02em;}
+.fsend:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(233,30,140,.35);}
+.fsend:disabled{opacity:.5;cursor:not-allowed;transform:none;}
+.fstatus{text-align:center;font-size:.75rem;margin-top:8px;color:var(--pink);}
+
+/* ── HERO ── */
+#hero{
+  background:linear-gradient(160deg,#fff0f8 0%,#f5e8ff 50%,#fff0f8 100%);
+  padding:52px 5% 40px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+  border-bottom:1px solid #ffd6ee;
+}
+#hero::before{
+  content:'';position:absolute;top:-60px;right:-60px;
+  width:300px;height:300px;border-radius:50%;
+  background:radial-gradient(circle,rgba(233,30,140,.08),transparent 65%);
+  pointer-events:none;
+}
+#hero::after{
+  content:'';position:absolute;bottom:-60px;left:-60px;
+  width:250px;height:250px;border-radius:50%;
+  background:radial-gradient(circle,rgba(124,58,237,.07),transparent 65%);
+  pointer-events:none;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  background:linear-gradient(135deg,var(--pink),var(--purple));
+  color:#fff;padding:6px 18px;border-radius:100px;
+  font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  margin-bottom:18px;
+}
+.live-dot{width:6px;height:6px;background:#fff;border-radius:50%;animation:ld 1.6s infinite;flex-shrink:0;}
+@keyframes ld{0%,100%{opacity:1}50%{opacity:.2}}
+
+.hero-h{
+  font-size:clamp(2.2rem,6vw,3.8rem);
+  font-weight:800;color:var(--dark);
+  line-height:1.1;letter-spacing:-.5px;
+  margin-bottom:8px;
+}
+.hero-h .pink{
+  background:linear-gradient(135deg,var(--pink),var(--purple));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.hero-count{
+  font-size:clamp(3rem,8vw,5rem);
+  font-weight:800;
+  background:linear-gradient(135deg,var(--pink),var(--purple));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  line-height:1;margin-bottom:4px;
+}
+.hero-sub{font-size:.9rem;color:var(--muted);margin-bottom:6px;}
+
+.scroll-hint{font-size:.82rem;color:var(--muted);margin:14px 0 0;animation:bob 2s ease-in-out infinite;}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+@keyframes shake{0%,100%{transform:translateX(0)}15%{transform:translateX(-6px)}30%{transform:translateX(6px)}45%{transform:translateX(-4px)}60%{transform:translateX(4px)}75%{transform:translateX(-2px)}90%{transform:translateX(2px)}}
+.wa-btn-coach,.join-btn,.wa-cta-btn{animation:shake 2.5s ease-in-out infinite;}
+
+/* ── JOURNEY ── */
+#journey{padding:40px 5%;text-align:center;background:var(--white);border-bottom:1px solid #ffd6ee;}
+.sec-label{display:inline-flex;align-items:center;gap:8px;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--pink);margin-bottom:12px;}
+.journey-img{max-width:480px;margin:0 auto;border-radius:20px;overflow:hidden;box-shadow:0 16px 48px rgba(233,30,140,.12);}
+.journey-img img{width:100%;display:block;}
+.journey-img-ph{width:100%;aspect-ratio:4/3;background:var(--bg2);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.85rem;}
+
+/* ── COACH ── */
+#coach{padding:44px 5%;background:var(--bg2);border-bottom:1px solid #ffd6ee;text-align:center;}
+.coach-sec-label{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--purple);margin-bottom:10px;}
+.coach-name{font-size:clamp(1.8rem,5vw,2.8rem);font-weight:800;color:var(--dark);margin-bottom:14px;}
+.coach-name span{background:linear-gradient(135deg,var(--pink),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.coach-chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:16px;}
+.chip{padding:7px 16px;background:var(--white);border:1.5px solid #ffd6ee;border-radius:100px;font-size:.78rem;font-weight:600;color:var(--dark2);}
+.vision-box{background:var(--white);border:1.5px solid #ffd6ee;border-radius:16px;padding:18px 22px;max-width:480px;margin:0 auto 22px;position:relative;}
+.vision-box::before{content:'❝';position:absolute;top:-14px;left:18px;font-size:1.8rem;color:var(--pink);line-height:1;}
+.vision-title{font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--purple);margin-bottom:6px;}
+.vision-text{font-size:.92rem;font-style:italic;color:var(--dark);font-weight:500;}
+.wa-btn-coach{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:#25D366;color:#fff;
+  padding:14px 32px;border-radius:50px;border:none;
+  font-family:'Poppins',sans-serif;font-size:1rem;font-weight:700;
+  cursor:pointer;transition:all .3s;margin-bottom:24px;width:100%;max-width:380px;
+}
+.wa-btn-coach:hover{background:#1fbd5a;transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,.3);}
+/* stats */
+.coach-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:420px;margin:0 auto;}
+.cstat{background:var(--white);border:1.5px solid #ffd6ee;border-radius:14px;padding:16px 10px;text-align:center;}
+.cstat-n{font-size:1.6rem;font-weight:800;background:linear-gradient(135deg,var(--pink),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;}
+.cstat-l{font-size:.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:4px;}
+
+/* ── TESTIMONIALS ── */
+#testi{padding:40px 0;background:var(--white);overflow:hidden;border-bottom:1px solid #ffd6ee;}
+.testi-head{text-align:center;padding:0 5%;margin-bottom:20px;}
+.sec-h{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:800;color:var(--dark);margin-bottom:6px;}
+.sec-h span{background:linear-gradient(135deg,var(--pink),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.sec-p{font-size:.84rem;color:var(--muted);}
+.mou{overflow:hidden;-webkit-mask:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent);mask:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent);}
+.mtr{display:flex;gap:12px;width:max-content;animation:msc 32s linear infinite;}
+.mtr:hover{animation-play-state:paused;}
+@keyframes msc{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.tc{flex:0 0 175px;border-radius:14px;overflow:hidden;flex-shrink:0;box-shadow:0 4px 16px rgba(233,30,140,.08);border:1.5px solid #ffd6ee;transition:all .3s;}
+.tc:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(233,30,140,.15);}
+.tc img{width:100%;display:block;}
+
+/* ── BENEFITS ── */
+#benefits{padding:44px 5%;background:var(--bg2);border-bottom:1px solid #ffd6ee;text-align:center;}
+.ben-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:520px;margin:20px auto 22px;}
+.bc{background:var(--white);border:1.5px solid #ffd6ee;border-radius:16px;padding:20px 16px;text-align:left;transition:all .3s;position:relative;overflow:hidden;}
+.bc:hover{border-color:var(--pink);transform:translateY(-3px);box-shadow:0 8px 24px rgba(233,30,140,.1);}
+.bc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--pink),var(--purple));transform:scaleX(0);transform-origin:left;transition:transform .3s;}
+.bc:hover::before{transform:scaleX(1);}
+.bc-num{font-size:1.6rem;font-weight:800;background:linear-gradient(135deg,var(--pink),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:8px;}
+.bc-title{font-size:.88rem;font-weight:700;color:var(--dark);margin-bottom:5px;}
+.bc-desc{font-size:.75rem;color:var(--muted);line-height:1.6;}
+.join-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:#25D366;color:#fff;
+  padding:14px 32px;border-radius:50px;border:none;
+  font-family:'Poppins',sans-serif;font-size:1rem;font-weight:700;
+  cursor:pointer;transition:all .3s;width:100%;max-width:380px;
+}
+.join-btn:hover{background:#1fbd5a;transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,.3);}
+
+/* ── KNOW COACH ── */
+#know{padding:44px 5%;background:var(--white);border-bottom:1px solid #ffd6ee;text-align:center;}
+.know-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:420px;margin:20px auto 0;}
+.ks{background:var(--bg2);border:1.5px solid #ffd6ee;border-radius:14px;padding:20px 14px;text-align:center;}
+.ks-icon{font-size:1.6rem;margin-bottom:6px;}
+.ks-n{font-size:1.8rem;font-weight:800;background:linear-gradient(135deg,var(--pink),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;}
+.ks-l{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:4px;}
+.earn-box{background:linear-gradient(135deg,var(--pink),var(--purple));border-radius:16px;padding:22px;max-width:420px;margin:14px auto 0;text-align:center;}
+.earn-title{font-size:.72rem;font-weight:700;color:rgba(255,255,255,.8);letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px;}
+.earn-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.ebox{background:rgba(255,255,255,.15);border-radius:10px;padding:14px 10px;}
+.eval{font-size:1.5rem;font-weight:800;color:#fff;line-height:1;letter-spacing:-1px;}
+.elbl{font-size:.58rem;color:rgba(255,255,255,.75);text-transform:uppercase;letter-spacing:.08em;margin-top:4px;}
+
+/* ── FAQ ── */
+#faq{padding:44px 5%;background:var(--bg2);border-bottom:1px solid #ffd6ee;}
+.faq-inner{max-width:620px;margin:0 auto;}
+.fi{border-bottom:1px solid #ffd6ee;}
+.fq{width:100%;background:none;border:none;text-align:left;padding:15px 0;font-family:'Poppins',sans-serif;font-size:.88rem;font-weight:500;color:var(--dark2);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:color .2s;}
+.fq:hover,.fi.open .fq{color:var(--pink);}
+.fic{width:22px;height:22px;border:1.5px solid #ffd6ee;color:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;transition:all .3s;}
+.fi.open .fic{background:linear-gradient(135deg,var(--pink),var(--purple));border-color:transparent;color:#fff;transform:rotate(45deg);}
+.fa{max-height:0;overflow:hidden;transition:max-height .4s,padding .3s;font-size:.82rem;color:var(--muted);line-height:1.75;padding:0;}
+.fi.open .fa{max-height:120px;padding-bottom:14px;}
+
+/* ── CTA ── */
+#cta{padding:44px 5%;background:var(--white);border-bottom:1px solid #ffd6ee;text-align:center;}
+.cta-box{max-width:520px;margin:0 auto;}
+.cta-h{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;color:var(--dark);margin-bottom:8px;}
+.cta-h span{background:linear-gradient(135deg,var(--pink),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.cta-p{font-size:.88rem;color:var(--muted);margin-bottom:20px;line-height:1.7;}
+.how-box{background:var(--bg2);border:1.5px solid #ffd6ee;border-radius:14px;padding:18px 20px;margin-bottom:16px;text-align:left;}
+.how-title{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--purple);margin-bottom:10px;}
+.how-row{font-size:.88rem;color:var(--dark2);line-height:2.0;}
+.how-row strong{color:var(--dark);}
+.num-row{display:flex;align-items:center;gap:10px;background:var(--bg2);border:1.5px solid #ffd6ee;border-radius:10px;padding:10px 14px;margin-bottom:14px;}
+.num-row span{font-size:.86rem;color:var(--dark2);font-weight:500;}
+.wa-cta-btn{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  background:#25D366;color:#fff;
+  padding:15px;border-radius:50px;border:none;
+  font-family:'Poppins',sans-serif;font-size:1rem;font-weight:700;
+  cursor:pointer;transition:all .3s;width:100%;margin-bottom:10px;
+}
+.wa-cta-btn:hover{background:#1fbd5a;transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,.3);}
+.ig-btn{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+  color:#fff;font-size:.88rem;font-weight:700;
+  padding:13px;text-decoration:none;transition:all .3s;
+  border-radius:50px;width:100%;margin-bottom:8px;
+}
+.ig-btn:hover{opacity:.88;transform:translateY(-2px);}
+.priv{color:var(--muted);font-size:.72rem;text-decoration:none;display:block;margin-top:6px;transition:color .2s;}
+.priv:hover{color:var(--pink);}
+.within-box{background:var(--bg2);border:1.5px solid #ffd6ee;border-radius:14px;padding:14px 18px;margin-top:14px;text-align:left;}
+.within-title{font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
+.within-row{display:flex;align-items:center;gap:8px;font-size:.82rem;color:var(--dark2);padding:5px 0;}
+
+/* ── FOOTER ── */
+footer{background:var(--dark);padding:20px 5%;text-align:center;}
+.f-tag{font-size:.78rem;color:rgba(255,255,255,.5);margin-bottom:4px;}
+.f-sign{font-size:.88rem;font-weight:600;color:rgba(255,255,255,.75);margin-bottom:4px;}
+.f-pow{font-size:.72rem;color:rgba(255,255,255,.3);}
+.f-pow strong{background:linear-gradient(135deg,var(--pink),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+
+/* SR */
+.sr{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease;}
+.sr.in{opacity:1;transform:translateY(0);}
+
+@media(max-width:540px){
+  .coach-stats{grid-template-columns:1fr 1fr 1fr;}
+  .ben-cards{grid-template-columns:1fr;}
+  .know-stats{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- PRIVACY MODAL -->
+<div class="ov" id="privacyModal">
+  <div class="pbox">
+    <button class="mcls" onclick="closeM('privacyModal')">×</button>
+    <h3>Information We Collect</h3><p>Name, phone you provide via WhatsApp or form.</p>
+    <h3>How We Use It</h3><p>Only to share program info and support. Never sold to third parties.</p>
+    <h3>Your Rights</h3><p>Access, correct or delete your info anytime.</p>
+    <h3>Disclaimer</h3><p>Results depend on personal effort. Earnings vary.</p>
+  </div>
+</div>
+
+<!-- FORM MODAL -->
+<div class="ov" id="formModal">
+  <div class="fbox">
+    <button class="mcls" onclick="closeM('formModal')">×</button>
+    <div class="ftitle">🚀 Start Your Journey</div>
+    <div class="fsub">CLIENT_NAME will reach out within 24 hrs</div>
+    <input type="hidden" id="formSource" value=""/>
+    <div class="fg"><label>Full Name *</label><input type="text" id="m-name" placeholder="Your full name"/></div>
+    <div class="fg"><label>Phone *</label><input type="tel" id="m-phone" placeholder="10-digit number" maxlength="10" inputmode="numeric"/></div>
+    <div class="frow">
+      <div class="fg"><label>Age *</label><input type="number" id="m-age" placeholder="Age" min="15" max="60"/></div>
+      <div class="fg"><label>Gender *</label><select id="m-gender"><option value="">Select</option><option>Female</option><option>Male</option><option>Other</option></select></div>
+    </div>
+    <div class="fg"><label>Profession *</label><select id="m-profession"><option value="">Select</option><option>Student</option><option>Housewife</option><option>Working Professional</option><option>Other</option></select></div>
+    <button class="fsend" id="sendBtn" onclick="submitForm()">📲 Send to WhatsApp</button>
+    <div class="fstatus" id="formStatus"></div>
+  </div>
+</div>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="hero-tag"><span class="live-dot"></span> Women-Only Skill Seekers Community</div>
+  <div class="hero-count"><span id="heroCount">0</span>+</div>
+  <h1 class="hero-h">Women <span class="pink">Rising Together</span></h1>
+  <p class="hero-sub">From Zero to Online Earner ✨</p>
+  <p class="scroll-hint">👇 See My Journey 👇</p>
+</section>
+
+<!-- ══ JOURNEY ══ -->
+<section id="journey">
+  <div class="sec-label">💫 My Journey</div>
+  <div class="journey-img sr">
+    <img src="JOURNEY_IMAGE_URL" alt="Journey" onerror="this.parentElement.innerHTML='<div class=journey-img-ph>📸 Add Journey Image</div>'"/>
+  </div>
+</section>
+
+<!-- ══ COACH ══ -->
+<section id="coach">
+  <div class="coach-sec-label">💫 Your Coach</div>
+  <h2 class="coach-name sr">Hi, I'm <span>CLIENT_NAME</span></h2>
+  <div class="coach-chips sr">
+    <div class="chip">✅ Entrepreneur</div>
+    <div class="chip">💻 Freelancer</div>
+    <div class="chip">🎯 Online-Skills Coach</div>
+  </div>
+  <div class="vision-box sr">
+    <div class="vision-title">🎯 My Vision:</div>
+    <div class="vision-text">"Empower Women to Empower Themselves"</div>
+  </div>
+  <button class="wa-btn-coach sr" onclick="openFormModal('Coach CTA')">📲 Connect on WhatsApp</button>
+  <div class="coach-stats sr">
+    <div class="cstat"><div class="cstat-n counter" data-target="3" data-suffix="+">0+</div><div class="cstat-l">Years of Experience</div></div>
+    <div class="cstat"><div class="cstat-n counter" data-target="2000" data-suffix="+">0+</div><div class="cstat-l">Women Helped</div></div>
+    <div class="cstat"><div class="cstat-n">₹<span class="counter" data-target="100000" data-suffix="+">0</span></div><div class="cstat-l">Monthly Earning</div></div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ══ -->
+<section id="testi">
+  <div class="testi-head sr">
+    <h2 class="sec-h">✨ Real <span>Success Stories</span></h2>
+    <p class="sec-p">100% real feedback from women in our community</p>
+  </div>
+  <div class="mou"><div class="mtr" id="row1"></div></div>
+</section>
+
+<!-- ══ BENEFITS ══ -->
+<section id="benefits">
+  <div class="sec-label sr">What Happens When You Join?</div>
+  <div class="ben-cards">
+    <div class="bc sr"><div class="bc-num">1</div><div class="bc-title">Instant Connection</div><p class="bc-desc">Direct WhatsApp access to me</p></div>
+    <div class="bc sr" style="transition-delay:.06s"><div class="bc-num">2</div><div class="bc-title">Complete Access</div><p class="bc-desc">Proven step-by-step training system</p></div>
+    <div class="bc sr" style="transition-delay:.12s"><div class="bc-num">3</div><div class="bc-title">Daily Mentorship</div><p class="bc-desc">24/7 support & community access</p></div>
+    <div class="bc sr" style="transition-delay:.18s"><div class="bc-num">4</div><div class="bc-title">Start Earning</div><p class="bc-desc">Begin from Week 1 confidently</p></div>
+  </div>
+  <button class="join-btn sr" onclick="openFormModal('Benefits CTA')">📲 Get Started Now</button>
+</section>
+
+<!-- ══ KNOW COACH ══ -->
+<section id="know">
+  <div class="sec-label sr">Know Your Coach</div>
+  <div class="know-stats sr">
+    <div class="ks"><div class="ks-icon">⭐</div><div class="ks-n counter" data-target="3" data-suffix="+">0+</div><div class="ks-l">Years of Experience</div></div>
+    <div class="ks"><div class="ks-icon">👥</div><div class="ks-n counter" data-target="2000" data-suffix="+">0+</div><div class="ks-l">Women Reached</div></div>
+  </div>
+  <div class="earn-box sr">
+    <div class="earn-title">🔥 Now it's YOUR time</div>
+    <div class="earn-grid">
+      <div class="ebox"><div class="eval counter" data-target="1600000" data-prefix="₹" data-format="full">₹0</div><div class="elbl">Earned by Women</div></div>
+      <div class="ebox"><div class="eval counter" data-target="500" data-suffix="+">0+</div><div class="elbl">Earning ₹50K–₹1L</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section id="faq">
+  <div class="faq-inner">
+    <div class="sec-label sr" style="justify-content:center;margin-bottom:18px;">Frequently Asked Questions</div>
+    <div class="fi sr"><button class="fq" onclick="tFaq(this)">What kind of work will I be doing? <span class="fic">+</span></button><div class="fa">Digital skills: Website Design, Graphics, Editing, Content Creation, Monetization, etc. 100% legitimate.</div></div>
+    <div class="fi sr"><button class="fq" onclick="tFaq(this)">Is this program legitimate & safe? <span class="fic">+</span></button><div class="fa">Genuine training. 2000+ women earning consistently. Verify credentials.</div></div>
+    <div class="fi sr"><button class="fq" onclick="tFaq(this)">How much time daily? <span class="fic">+</span></button><div class="fa">Just 1-2 hours daily. Flexible for everyone.</div></div>
+    <div class="fi sr"><button class="fq" onclick="tFaq(this)">When will I start earning? <span class="fic">+</span></button><div class="fa">Within 1 month. Sustainable income in 1-2 months.</div></div>
+    <div class="fi sr"><button class="fq" onclick="tFaq(this)">Any prior experience needed? <span class="fic">+</span></button><div class="fa">No experience needed! Step-by-step guidance provided.</div></div>
+    <div class="fi sr"><button class="fq" onclick="tFaq(this)">What support after joining? <span class="fic">+</span></button><div class="fa">Daily mentorship, 24/7 WhatsApp, weekly calls & women-only community.</div></div>
+    <div class="fi sr"><button class="fq" onclick="tFaq(this)">Any investment required? <span class="fic">+</span></button><div class="fa">Nominal fee covers everything. No hidden costs.</div></div>
+    <div class="fi sr"><button class="fq" onclick="tFaq(this)">Can I do this alongside job/studies? <span class="fic">+</span></button><div class="fa">Yes! Designed for busy women. Learn in free time.</div></div>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<section id="cta">
+  <div class="cta-box">
+    <h2 class="cta-h sr">Ready to <span>Transform Your Life?</span></h2>
+    <p class="cta-p sr">Join thousands of women on their journey to financial independence</p>
+    <div class="how-box sr">
+      <div class="how-title">📲 How to Start?</div>
+      <div class="how-row">Simply message me on WhatsApp:</div><br/>
+      <div class="how-row"><strong>📝 Name:</strong> Full Name</div>
+      <div class="how-row"><strong>🎂 Age:</strong> Your Age</div>
+      <div class="how-row"><strong>💼 Profession:</strong> Current Status</div>
+    </div>
+    <div class="num-row sr"><span>📌 Save My Number: <strong>CLIENT_NUMBER</strong></span></div>
+    <button class="wa-cta-btn sr" onclick="openFormModal('CTA Button')">📲 Message on WhatsApp Now</button>
+    <a href="https://www.instagram.com/CLIENT_INSTAGRAM" target="_blank" rel="noopener" class="ig-btn sr">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      Follow on Instagram
+    </a>
+    <a href="#" class="priv sr" onclick="openM('privacyModal');return false;">🔒 Privacy Policy</a>
+    <div class="within-box sr">
+      <div class="within-title">⏳ Within 24 hours:</div>
+      <div class="within-row">📋 Complete Details</div>
+      <div class="within-row">🗺 Clear Roadmap</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-tag">🌟 Empower with skills • 🌈 Support every vision • 🚀 Dreams to direction</div>
+  <div class="f-sign">❤️ With Strength & Sincerity, CLIENT_NAME</div>
+  <div class="f-pow">Powered by <strong>Osama · AdDestini</strong></div>
+</footer>
+
+<script>
+const SHEET_URL='YOUR_APPS_SCRIPT_URL';
+const WA_NUMBER='91CLIENT_NUMBER';
+const imgs=[
+  'FEEDBACK_1_URL',
+  'FEEDBACK_2_URL',
+  'FEEDBACK_3_URL',
+  'FEEDBACK_4_URL',
+  'FEEDBACK_5_URL',
+  'FEEDBACK_6_URL',
+  'FEEDBACK_7_URL',
+  'FEEDBACK_8_URL'
+];
+
+function openM(id){document.getElementById(id).classList.add('on');document.body.style.overflow='hidden';}
+function closeM(id){document.getElementById(id).classList.remove('on');document.body.style.overflow='';}
+function openFormModal(src){clearF();document.getElementById('formSource').value=src||'';openM('formModal');}
+document.querySelectorAll('.ov').forEach(o=>o.addEventListener('click',function(e){if(e.target===this)closeM(this.id);}));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeM('formModal');closeM('privacyModal');}});
+function clearF(){['m-name','m-phone','m-age','m-gender','m-profession'].forEach(id=>document.getElementById(id).value='');document.getElementById('formStatus').textContent='';const b=document.getElementById('sendBtn');b.disabled=false;b.textContent='📲 Send to WhatsApp';}
+document.getElementById('m-phone').addEventListener('input',function(){this.value=this.value.replace(/\D/g,'').slice(0,10);});
+
+async function submitForm(){
+  const name=document.getElementById('m-name').value.trim(),phone=document.getElementById('m-phone').value.trim(),age=document.getElementById('m-age').value.trim(),gender=document.getElementById('m-gender').value,profession=document.getElementById('m-profession').value,source=document.getElementById('formSource').value;
+  if(!name||!phone||!age||!gender||!profession){document.getElementById('formStatus').textContent='⚠️ Please fill all fields.';return;}
+  if(phone.length!==10){document.getElementById('formStatus').textContent='⚠️ Enter valid 10-digit number.';return;}
+  const b=document.getElementById('sendBtn');b.disabled=true;b.textContent='Opening...';
+  saveSheet({name,phone,age,gender,profession,source});
+  if(typeof fbq!=='undefined')fbq('track','Lead');
+  const msg=`Hello Ma'am,\n\nI am interested in joining your program.\n\nName: ${name}\nPhone: ${phone}\nAge: ${age}\nGender: ${gender}\nProfession: ${profession}\n\nPlease share next steps. Thank you!`;
+  setTimeout(()=>{window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`,'_blank');setTimeout(()=>closeM('formModal'),600);},600);
+}
+async function saveSheet(d){
+  if(!SHEET_URL||SHEET_URL.includes('YOUR_'))return;
+  const p='?timestamp='+encodeURIComponent(new Date().toLocaleString('en-IN'))+'&name='+encodeURIComponent(d.name)+'&phone='+encodeURIComponent(d.phone)+'&age='+encodeURIComponent(d.age)+'&gender='+encodeURIComponent(d.gender)+'&profession='+encodeURIComponent(d.profession)+'&source='+encodeURIComponent(d.source);
+  try{await fetch(SHEET_URL+p,{method:'GET',mode:'no-cors'});}catch(e){}
+}
+
+// Hero counter
+(function(){
+  const el=document.getElementById('heroCount'),target=100000,dur=2400,s=performance.now(),ease=p=>p===1?1:1-Math.pow(2,-10*p);
+  const tick=now=>{const p=Math.min((now-s)/dur,1);el.textContent=Math.floor(ease(p)*target).toLocaleString('en-IN');if(p<1)requestAnimationFrame(tick);};
+  requestAnimationFrame(tick);
+})();
+
+// Generic counter
+function animC(el){
+  if(el.dataset.done)return;el.dataset.done='1';
+  const target=parseInt(el.dataset.target),suffix=el.dataset.suffix||'',prefix=el.dataset.prefix||'',fmt=el.dataset.format,dur=target>=100000?2000:1200,s=performance.now(),ease=p=>p===1?1:1-Math.pow(2,-10*p);
+  const tick=now=>{const p=Math.min((now-s)/dur,1),v=Math.floor(ease(p)*target);
+    if(fmt==='full'&&v>=100000)el.textContent=prefix+Math.floor(v/100000)+'L+';
+    else el.textContent=prefix+v.toLocaleString('en-IN')+suffix;
+    if(p<1)requestAnimationFrame(tick);};
+  requestAnimationFrame(tick);
+}
+
+// Testimonial marquee
+const row1=document.getElementById('row1');
+[...imgs,...imgs].forEach(src=>{const d=document.createElement('div');d.className='tc';d.innerHTML=`<img src="${src}" alt="Feedback" loading="lazy"/>`;row1.appendChild(d);});
+
+// FAQ
+function tFaq(btn){const item=btn.closest('.fi'),isOpen=item.classList.contains('open');document.querySelectorAll('.fi.open').forEach(i=>i.classList.remove('open'));if(!isOpen)item.classList.add('open');}
+
+// Scroll reveal + counters
+const obs=new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('.counter').forEach(animC);obs.unobserve(e.target);}});},{threshold:.08});
+document.querySelectorAll('.sr').forEach(el=>obs.observe(el));
+const cobs=new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting){animC(e.target);cobs.unobserve(e.target);}});},{threshold:.3});
+document.querySelectorAll('.counter').forEach(el=>{if(!el.closest('.sr'))cobs.observe(el);});
+</script>
+</body>
+</html>
