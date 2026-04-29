@@ -1,480 +1,544 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Tasnim Fatima – Learn, Earn & Shine ✨ | Women Community</title>
-<meta name="description" content="Tasnim Fatima – Online Earning Coach for Women"/>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
-<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','978896671176172');fbq('track','PageView');</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=978896671176172&ev=PageView&noscript=1"/></noscript>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tasnim Fatima – Learn, Earn & Grow Online ✨</title>
+  <meta name="description" content="Join Tasnim Fatima Skill Seekers Community. Learn digital skills, earn online, and transform your life." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-<style>
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;overflow-x:hidden;}
-:root{
-  --pink:#e91e8c;
-  --pink2:#f050a8;
-  --pink3:#ffd6ee;
-  --purple:#7c3aed;
-  --purple2:#9f5ff0;
-  --bg:#fff9fc;
-  --bg2:#fff0f8;
-  --dark:#1a0a12;
-  --dark2:#2d1a24;
-  --muted:#8a6070;
-  --white:#ffffff;
-}
-body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--dark);overflow-x:hidden;line-height:1.6;}
-img{display:block;max-width:100%;}
-::-webkit-scrollbar{width:4px;}
-::-webkit-scrollbar-thumb{background:linear-gradient(var(--pink),var(--purple));}
+  <!-- ══ META PIXEL CODE ══ -->
+  <!-- CHANGE: Replace TUMHARA_PIXEL_ID with client's actual Pixel ID (2 places below) -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '978896671176172');
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+  <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=978896671176172&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- ══ END META PIXEL CODE ══ -->
 
-/* ── MODAL ── */
-.ov{display:none;position:fixed;inset:0;background:rgba(26,10,18,.88);z-index:9999;align-items:center;justify-content:center;padding:16px;backdrop-filter:blur(12px);}
-.ov.on{display:flex;}
-.pbox{background:var(--white);border-radius:16px;padding:28px;max-width:460px;width:100%;position:relative;max-height:88vh;overflow-y:auto;}
-.pbox h3{color:var(--pink);font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin:12px 0 4px;}
-.pbox h3:first-of-type{margin-top:0;}
-.pbox p{color:var(--muted);font-size:.82rem;line-height:1.7;}
-.mcls{position:absolute;top:12px;right:16px;background:none;border:none;color:var(--muted);font-size:22px;cursor:pointer;line-height:1;}
-.mcls:hover{color:var(--dark);}
-
-/* FORM */
-.fbox{background:var(--white);border-radius:20px;padding:32px 26px;max-width:440px;width:100%;position:relative;box-shadow:0 32px 80px rgba(233,30,140,.15);}
-.ftitle{font-size:1.4rem;font-weight:800;color:var(--dark);text-align:center;margin-bottom:2px;}
-.fsub{font-size:.75rem;color:var(--muted);text-align:center;margin-bottom:20px;}
-.fg{margin-bottom:12px;}
-.fg label{display:block;font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--pink);margin-bottom:5px;}
-.fg input,.fg select{width:100%;padding:11px 14px;background:var(--bg2);border:1.5px solid #ffd6ee;border-radius:10px;font-family:'Poppins',sans-serif;font-size:.88rem;color:var(--dark);outline:none;transition:border-color .2s;-webkit-appearance:none;}
-.fg input::placeholder{color:#c0a0b0;}
-.fg select option{background:var(--white);}
-.fg input:focus,.fg select:focus{border-color:var(--pink);}
-.frow{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
-.fsend{width:100%;padding:14px;background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff;font-family:'Poppins',sans-serif;font-size:1rem;font-weight:700;border:none;border-radius:12px;margin-top:8px;cursor:pointer;transition:all .25s;letter-spacing:.02em;}
-.fsend:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(233,30,140,.35);}
-.fsend:disabled{opacity:.5;cursor:not-allowed;transform:none;}
-.fstatus{text-align:center;font-size:.75rem;margin-top:8px;color:var(--pink);}
-
-/* ── HERO ── */
-#hero{
-  background:linear-gradient(160deg,#fff0f8 0%,#f5e8ff 50%,#fff0f8 100%);
-  padding:52px 5% 40px;
-  text-align:center;
-  position:relative;
-  overflow:hidden;
-  border-bottom:1px solid #ffd6ee;
-}
-#hero::before{
-  content:'';position:absolute;top:-60px;right:-60px;
-  width:300px;height:300px;border-radius:50%;
-  background:radial-gradient(circle,rgba(233,30,140,.08),transparent 65%);
-  pointer-events:none;
-}
-#hero::after{
-  content:'';position:absolute;bottom:-60px;left:-60px;
-  width:250px;height:250px;border-radius:50%;
-  background:radial-gradient(circle,rgba(124,58,237,.07),transparent 65%);
-  pointer-events:none;
-}
-.hero-tag{
-  display:inline-flex;align-items:center;gap:8px;
-  background:linear-gradient(135deg,var(--pink),var(--purple));
-  color:#fff;padding:6px 18px;border-radius:100px;
-  font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
-  margin-bottom:18px;
-}
-.live-dot{width:6px;height:6px;background:#fff;border-radius:50%;animation:ld 1.6s infinite;flex-shrink:0;}
-@keyframes ld{0%,100%{opacity:1}50%{opacity:.2}}
-
-.hero-h{
-  font-size:clamp(2.2rem,6vw,3.8rem);
-  font-weight:800;color:var(--dark);
-  line-height:1.1;letter-spacing:-.5px;
-  margin-bottom:8px;
-}
-.hero-h .pink{
-  background:linear-gradient(135deg,var(--pink),var(--purple));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-}
-.hero-count{
-  font-size:clamp(3rem,8vw,5rem);
-  font-weight:800;
-  background:linear-gradient(135deg,var(--pink),var(--purple));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-  line-height:1;margin-bottom:4px;
-}
-.hero-sub{font-size:.9rem;color:var(--muted);margin-bottom:6px;}
-
-.scroll-hint{font-size:.82rem;color:var(--muted);margin:14px 0 0;animation:bob 2s ease-in-out infinite;}
-@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
-@keyframes shake{0%,100%{transform:translateX(0)}15%{transform:translateX(-6px)}30%{transform:translateX(6px)}45%{transform:translateX(-4px)}60%{transform:translateX(4px)}75%{transform:translateX(-2px)}90%{transform:translateX(2px)}}
-.wa-btn-coach,.join-btn,.wa-cta-btn{animation:shake 2.5s ease-in-out infinite;}
-
-/* ── JOURNEY ── */
-#journey{padding:40px 5%;text-align:center;background:var(--white);border-bottom:1px solid #ffd6ee;}
-.sec-label{display:inline-flex;align-items:center;gap:8px;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--pink);margin-bottom:12px;}
-.journey-img{max-width:480px;margin:0 auto;border-radius:20px;overflow:hidden;box-shadow:0 16px 48px rgba(233,30,140,.12);}
-.journey-img img{width:100%;display:block;}
-.journey-img-ph{width:100%;aspect-ratio:4/3;background:var(--bg2);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.85rem;}
-
-/* ── COACH ── */
-#coach{padding:44px 5%;background:var(--bg2);border-bottom:1px solid #ffd6ee;text-align:center;}
-.coach-sec-label{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--purple);margin-bottom:10px;}
-.coach-name{font-size:clamp(1.8rem,5vw,2.8rem);font-weight:800;color:var(--dark);margin-bottom:14px;}
-.coach-name span{background:linear-gradient(135deg,var(--pink),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-.coach-chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:16px;}
-.chip{padding:7px 16px;background:var(--white);border:1.5px solid #ffd6ee;border-radius:100px;font-size:.78rem;font-weight:600;color:var(--dark2);}
-.vision-box{background:var(--white);border:1.5px solid #ffd6ee;border-radius:16px;padding:18px 22px;max-width:480px;margin:0 auto 22px;position:relative;}
-.vision-box::before{content:'❝';position:absolute;top:-14px;left:18px;font-size:1.8rem;color:var(--pink);line-height:1;}
-.vision-title{font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--purple);margin-bottom:6px;}
-.vision-text{font-size:.92rem;font-style:italic;color:var(--dark);font-weight:500;}
-.wa-btn-coach{
-  display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  background:#25D366;color:#fff;
-  padding:14px 32px;border-radius:50px;border:none;
-  font-family:'Poppins',sans-serif;font-size:1rem;font-weight:700;
-  cursor:pointer;transition:all .3s;margin-bottom:24px;width:100%;max-width:380px;
-}
-.wa-btn-coach:hover{background:#1fbd5a;transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,.3);}
-/* stats */
-.coach-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:420px;margin:0 auto;}
-.cstat{background:var(--white);border:1.5px solid #ffd6ee;border-radius:14px;padding:16px 10px;text-align:center;}
-.cstat-n{font-size:1.6rem;font-weight:800;background:linear-gradient(135deg,var(--pink),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;}
-.cstat-l{font-size:.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:4px;}
-
-/* ── TESTIMONIALS ── */
-#testi{padding:40px 0;background:var(--white);overflow:hidden;border-bottom:1px solid #ffd6ee;}
-.testi-head{text-align:center;padding:0 5%;margin-bottom:20px;}
-.sec-h{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:800;color:var(--dark);margin-bottom:6px;}
-.sec-h span{background:linear-gradient(135deg,var(--pink),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-.sec-p{font-size:.84rem;color:var(--muted);}
-.mou{overflow:hidden;-webkit-mask:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent);mask:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent);}
-.mtr{display:flex;gap:12px;width:max-content;animation:msc 32s linear infinite;}
-.mtr:hover{animation-play-state:paused;}
-@keyframes msc{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.tc{flex:0 0 175px;border-radius:14px;overflow:hidden;flex-shrink:0;box-shadow:0 4px 16px rgba(233,30,140,.08);border:1.5px solid #ffd6ee;transition:all .3s;}
-.tc:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(233,30,140,.15);}
-.tc img{width:100%;display:block;}
-
-/* ── BENEFITS ── */
-#benefits{padding:44px 5%;background:var(--bg2);border-bottom:1px solid #ffd6ee;text-align:center;}
-.ben-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:520px;margin:20px auto 22px;}
-.bc{background:var(--white);border:1.5px solid #ffd6ee;border-radius:16px;padding:20px 16px;text-align:left;transition:all .3s;position:relative;overflow:hidden;}
-.bc:hover{border-color:var(--pink);transform:translateY(-3px);box-shadow:0 8px 24px rgba(233,30,140,.1);}
-.bc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--pink),var(--purple));transform:scaleX(0);transform-origin:left;transition:transform .3s;}
-.bc:hover::before{transform:scaleX(1);}
-.bc-num{font-size:1.6rem;font-weight:800;background:linear-gradient(135deg,var(--pink),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:8px;}
-.bc-title{font-size:.88rem;font-weight:700;color:var(--dark);margin-bottom:5px;}
-.bc-desc{font-size:.75rem;color:var(--muted);line-height:1.6;}
-.join-btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  background:#25D366;color:#fff;
-  padding:14px 32px;border-radius:50px;border:none;
-  font-family:'Poppins',sans-serif;font-size:1rem;font-weight:700;
-  cursor:pointer;transition:all .3s;width:100%;max-width:380px;
-}
-.join-btn:hover{background:#1fbd5a;transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,.3);}
-
-/* ── KNOW COACH ── */
-#know{padding:44px 5%;background:var(--white);border-bottom:1px solid #ffd6ee;text-align:center;}
-.know-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:420px;margin:20px auto 0;}
-.ks{background:var(--bg2);border:1.5px solid #ffd6ee;border-radius:14px;padding:20px 14px;text-align:center;}
-.ks-icon{font-size:1.6rem;margin-bottom:6px;}
-.ks-n{font-size:1.8rem;font-weight:800;background:linear-gradient(135deg,var(--pink),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;}
-.ks-l{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:4px;}
-.earn-box{background:linear-gradient(135deg,var(--pink),var(--purple));border-radius:16px;padding:22px;max-width:420px;margin:14px auto 0;text-align:center;}
-.earn-title{font-size:.72rem;font-weight:700;color:rgba(255,255,255,.8);letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px;}
-.earn-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
-.ebox{background:rgba(255,255,255,.15);border-radius:10px;padding:14px 10px;}
-.eval{font-size:1.5rem;font-weight:800;color:#fff;line-height:1;letter-spacing:-1px;}
-.elbl{font-size:.58rem;color:rgba(255,255,255,.75);text-transform:uppercase;letter-spacing:.08em;margin-top:4px;}
-
-/* ── FAQ ── */
-#faq{padding:44px 5%;background:var(--bg2);border-bottom:1px solid #ffd6ee;}
-.faq-inner{max-width:620px;margin:0 auto;}
-.fi{border-bottom:1px solid #ffd6ee;}
-.fq{width:100%;background:none;border:none;text-align:left;padding:15px 0;font-family:'Poppins',sans-serif;font-size:.88rem;font-weight:500;color:var(--dark2);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:color .2s;}
-.fq:hover,.fi.open .fq{color:var(--pink);}
-.fic{width:22px;height:22px;border:1.5px solid #ffd6ee;color:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;transition:all .3s;}
-.fi.open .fic{background:linear-gradient(135deg,var(--pink),var(--purple));border-color:transparent;color:#fff;transform:rotate(45deg);}
-.fa{max-height:0;overflow:hidden;transition:max-height .4s,padding .3s;font-size:.82rem;color:var(--muted);line-height:1.75;padding:0;}
-.fi.open .fa{max-height:120px;padding-bottom:14px;}
-
-/* ── CTA ── */
-#cta{padding:44px 5%;background:var(--white);border-bottom:1px solid #ffd6ee;text-align:center;}
-.cta-box{max-width:520px;margin:0 auto;}
-.cta-h{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;color:var(--dark);margin-bottom:8px;}
-.cta-h span{background:linear-gradient(135deg,var(--pink),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-.cta-p{font-size:.88rem;color:var(--muted);margin-bottom:20px;line-height:1.7;}
-.how-box{background:var(--bg2);border:1.5px solid #ffd6ee;border-radius:14px;padding:18px 20px;margin-bottom:16px;text-align:left;}
-.how-title{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--purple);margin-bottom:10px;}
-.how-row{font-size:.88rem;color:var(--dark2);line-height:2.0;}
-.how-row strong{color:var(--dark);}
-.num-row{display:flex;align-items:center;gap:10px;background:var(--bg2);border:1.5px solid #ffd6ee;border-radius:10px;padding:10px 14px;margin-bottom:14px;}
-.num-row span{font-size:.86rem;color:var(--dark2);font-weight:500;}
-.wa-cta-btn{
-  display:flex;align-items:center;justify-content:center;gap:10px;
-  background:#25D366;color:#fff;
-  padding:15px;border-radius:50px;border:none;
-  font-family:'Poppins',sans-serif;font-size:1rem;font-weight:700;
-  cursor:pointer;transition:all .3s;width:100%;margin-bottom:10px;
-}
-.wa-cta-btn:hover{background:#1fbd5a;transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,.3);}
-.ig-btn{
-  display:flex;align-items:center;justify-content:center;gap:10px;
-  background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-  color:#fff;font-size:.88rem;font-weight:700;
-  padding:13px;text-decoration:none;transition:all .3s;
-  border-radius:50px;width:100%;margin-bottom:8px;
-}
-.ig-btn:hover{opacity:.88;transform:translateY(-2px);}
-.priv{color:var(--muted);font-size:.72rem;text-decoration:none;display:block;margin-top:6px;transition:color .2s;}
-.priv:hover{color:var(--pink);}
-.within-box{background:var(--bg2);border:1.5px solid #ffd6ee;border-radius:14px;padding:14px 18px;margin-top:14px;text-align:left;}
-.within-title{font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
-.within-row{display:flex;align-items:center;gap:8px;font-size:.82rem;color:var(--dark2);padding:5px 0;}
-
-/* ── FOOTER ── */
-footer{background:var(--dark);padding:20px 5%;text-align:center;}
-.f-tag{font-size:.78rem;color:rgba(255,255,255,.5);margin-bottom:4px;}
-.f-sign{font-size:.88rem;font-weight:600;color:rgba(255,255,255,.75);margin-bottom:4px;}
-.f-pow{font-size:.72rem;color:rgba(255,255,255,.3);}
-.f-pow strong{background:linear-gradient(135deg,var(--pink),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-
-/* SR */
-.sr{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease;}
-.sr.in{opacity:1;transform:translateY(0);}
-
-@media(max-width:540px){
-  .coach-stats{grid-template-columns:1fr 1fr 1fr;}
-  .ben-cards{grid-template-columns:1fr;}
-  .know-stats{grid-template-columns:1fr 1fr;}
-}
-</style>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body { font-family: 'Poppins', sans-serif; background: #0a0a0a; color: #fff; overflow-x: hidden; }
+    .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.88); z-index: 9999; align-items: center; justify-content: center; padding: 20px; backdrop-filter: blur(6px); }
+    .modal-overlay.active { display: flex; }
+    .privacy-box { background: #1a1a2e; border: 1px solid rgba(255,100,130,0.25); border-radius: 20px; padding: 32px; max-width: 500px; width: 100%; position: relative; max-height: 85vh; overflow-y: auto; }
+    .modal-close { position: absolute; top: 12px; right: 16px; background: none; border: none; color: #aaa; font-size: 24px; cursor: pointer; }
+    .modal-close:hover { color: #fff; }
+    .privacy-box h3 { color: #ff6482; font-size: 13px; font-weight: 700; margin: 16px 0 5px; }
+    .privacy-box h3:first-of-type { margin-top: 0; }
+    .privacy-box p { color: rgba(255,255,255,0.65); font-size: 12px; line-height: 1.7; }
+    .privacy-footer { margin-top: 14px; font-size: 11px; color: rgba(255,255,255,0.3); }
+    .form-box { background: #13131f; border: 1px solid rgba(255,100,130,0.25); border-radius: 22px; padding: 32px 28px; max-width: 440px; width: 100%; position: relative; box-shadow: 0 30px 80px rgba(0,0,0,0.6); }
+    .form-box-title { font-size: 18px; font-weight: 800; color: #fff; text-align: center; margin-bottom: 3px; }
+    .form-box-sub { font-size: 11px; color: rgba(255,255,255,0.4); text-align: center; margin-bottom: 22px; }
+    .fgroup { margin-bottom: 12px; }
+    .fgroup label { display: block; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-bottom: 6px; }
+    .fgroup input, .fgroup select { width: 100%; padding: 11px 14px; background: rgba(255,255,255,0.06); border: 1.5px solid rgba(255,255,255,0.1); border-radius: 10px; font-family: 'Poppins', sans-serif; font-size: 13px; color: #fff; outline: none; transition: all 0.25s; -webkit-appearance: none; }
+    .fgroup input::placeholder { color: rgba(255,255,255,0.25); }
+    .fgroup select option { background: #1a1a2e; color: #fff; }
+    .fgroup input:focus, .fgroup select:focus { border-color: #ff6482; background: rgba(255,100,130,0.07); }
+    .frow { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .form-send-btn { width: 100%; padding: 13px; background: linear-gradient(135deg, #ff6482, #c084fc); color: white; font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 700; border: none; border-radius: 10px; cursor: pointer; margin-top: 6px; box-shadow: 0 6px 22px rgba(255,100,130,0.35); transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 8px; }
+    .form-send-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(255,100,130,0.5); }
+    .form-send-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+    .form-status { text-align: center; font-size: 12px; margin-top: 10px; min-height: 16px; color: #4ade80; }
+    .hero { min-height: 100vh; background: linear-gradient(160deg, #0d0d1a 0%, #1a0a1e 40%, #0d0d1a 100%); display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; padding: 16px 20px 48px; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(255,100,130,0.18) 0%, transparent 65%); top: -150px; left: 50%; transform: translateX(-50%); animation: orb1 7s ease-in-out infinite; pointer-events: none; }
+    .hero::after { content: ''; position: absolute; width: 400px; height: 400px; background: radial-gradient(circle, rgba(160,80,255,0.12) 0%, transparent 65%); bottom: -100px; right: -80px; animation: orb2 9s ease-in-out infinite; pointer-events: none; }
+    @keyframes orb1 { 0%,100%{transform:translateX(-50%) scale(1)} 50%{transform:translateX(-50%) scale(1.15)} }
+    @keyframes orb2 { 0%,100%{transform:scale(1)} 50%{transform:scale(1.15)} }
+    .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,100,130,0.12); border: 1px solid rgba(255,100,130,0.45); color: #ff8fab; font-size: 13px; font-weight: 700; letter-spacing: 1px; padding: 9px 20px; border-radius: 100px; margin-bottom: 14px; margin-top: 10px; position: relative; z-index: 1; animation: fadeUp 0.7s ease both; }
+    .live-dot { width: 8px; height: 8px; background: #ff6482; border-radius: 50%; animation: liveBlink 1.5s infinite; }
+    @keyframes liveBlink { 0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(255,100,130,0.5)} 50%{opacity:0.4;box-shadow:0 0 0 6px rgba(255,100,130,0)} }
+    .hero-count { font-size: clamp(1.2rem, 4.5vw, 4rem); font-weight: 900; line-height: 1; white-space: nowrap; position: relative; z-index: 1; animation: fadeUp 0.8s 0.1s ease both; background: linear-gradient(135deg, #ffffff 0%, #ff8fab 50%, #c084fc 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-label { font-size: clamp(1rem, 2.8vw, 1.3rem); font-weight: 700; color: rgba(255,255,255,0.9); margin-top: 6px; position: relative; z-index: 1; animation: fadeUp 0.8s 0.15s ease both; }
+    .hero-tagline { font-size: 14px; color: rgba(255,255,255,0.45); margin-top: 6px; letter-spacing: 1px; position: relative; z-index: 1; animation: fadeUp 0.8s 0.2s ease both; }
+    .hero-tagline span { color: rgba(255,255,255,0.2); margin: 0 8px; }
+    .journey-block { position: relative; z-index: 1; margin-top: 16px; width: 100%; max-width: 500px; animation: fadeUp 0.8s 0.25s ease both; }
+    .journey-label { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,100,130,0.10); border: 1px solid rgba(255,100,130,0.45); color: #ff8fab; font-size: 13px; font-weight: 700; padding: 8px 20px; border-radius: 100px; margin-bottom: 14px; }
+    .yt-embed { width: 100%; border-radius: 14px; overflow: hidden; aspect-ratio: auto; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 16px 48px rgba(0,0,0,0.5); }
+    .yt-embed img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 14px; }
+    .yt-placeholder { width: 100%; aspect-ratio: 16/9; background: rgba(255,255,255,0.04); border: 2px dashed rgba(255,100,130,0.3); border-radius: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: rgba(255,255,255,0.3); font-size: 13px; }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:translateY(0)} }
+    .coach-inner-wrap { width: 100%; max-width: 500px; margin-top: 28px; position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; text-align: center; }
+    .coach-label { font-size: 24px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #c084fc; margin-bottom: 16px; display: block; }
+    .coach-photo-ring { width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, #ff6482, #c084fc); padding: 3px; margin: 0 auto 16px; animation: ringPulse 3s ease-in-out infinite; }
+    @keyframes ringPulse { 0%,100%{box-shadow:0 0 0 0 rgba(255,100,130,0.3)} 50%{box-shadow:0 0 0 12px rgba(255,100,130,0)} }
+    .coach-photo-inner { width: 100%; height: 100%; border-radius: 50%; background: linear-gradient(145deg, #2a1535, #1a0a2e); display: flex; align-items: center; justify-content: center; font-size: 3rem; overflow: hidden; }
+    .coach-photo-inner img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+    .coach-name { font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 800; background: linear-gradient(135deg, #ffffff, #ff8fab); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 14px; }
+    .coach-roles { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 18px; }
+    .coach-role { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); color: rgba(255,255,255,0.9); font-size: 14px; font-weight: 600; padding: 9px 18px; border-radius: 100px; }
+    .vision-card { background: rgba(255,100,130,0.08); border: 1px solid rgba(255,100,130,0.25); border-radius: 14px; padding: 18px 22px; max-width: 480px; margin: 0 auto 20px; position: relative; }
+    .vision-card::before { content: '"'; font-size: 5rem; color: rgba(255,100,130,0.15); position: absolute; top: -8px; left: 14px; font-family: Georgia, serif; line-height: 1; }
+    .vision-title { font-size: 13px; font-weight: 700; color: #ff8fab; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .vision-text { font-size: 16px; font-weight: 600; color: rgba(255,255,255,0.9); line-height: 1.55; font-style: italic; }
+    .wa-connect-btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; background: linear-gradient(135deg, #ff6482, #c084fc); color: white; font-size: 16px; font-weight: 700; padding: 15px 0; width: 100%; max-width: 420px; border-radius: 100px; border: none; cursor: pointer; box-shadow: 0 5px 20px rgba(255,100,130,0.35); transition: all 0.3s; font-family: 'Poppins', sans-serif; }
+    .wa-connect-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(255,100,130,0.5); }
+    .stats-vertical { display: flex; flex-direction: column; gap: 0; margin-top: 22px; width: 100%; max-width: 500px; margin-left: auto; margin-right: auto; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; overflow: hidden; }
+    .stat-v-item { display: flex; align-items: center; justify-content: space-between; padding: 16px 40px; border-bottom: 1px solid rgba(255,255,255,0.08); text-align: left; }
+    .stat-v-item:last-child { border-bottom: none; }
+    .stat-v-left { display: flex; flex-direction: column; }
+    .stat-v-num { font-size: 1.7rem; font-weight: 900; background: linear-gradient(135deg, #ff8fab, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; }
+    .stat-v-lbl { font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 3px; }
+    .stat-v-icon { font-size: 1.8rem; opacity: 0.75; }
+    .testimonials-section { padding: 36px 0 32px; background: #0d0d1a; overflow: hidden; }
+    .section-header { text-align: center; padding: 0 20px; margin-bottom: 22px; overflow: hidden; }
+    .section-title-main { font-size: clamp(1rem, 4.8vw, 2.8rem); font-weight: 800; color: #fff; margin-bottom: 8px; white-space: nowrap; max-width: 100%; display: block; }
+    .section-title-main.size-lg { font-size: clamp(1.2rem, 6vw, 2.8rem); }
+    .section-title-main.size-sm { font-size: clamp(1rem, 5vw, 2.6rem); }
+    .section-title-main.size-md { font-size: clamp(1rem, 5vw, 2.6rem); }
+    .section-title-main.size-xl { font-size: clamp(1.4rem, 6.5vw, 3rem); }
+    .highlight { background: linear-gradient(135deg, #ff6482, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .section-subtitle { font-size: 15px; font-weight: 500; color: rgba(255,255,255,0.55); }
+    .marquee-outer { overflow: hidden; -webkit-mask: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%); mask: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%); }
+    .marquee-inner { display: flex; gap: 14px; width: max-content; animation: slideX 15s linear infinite; }
+    .marquee-inner:hover { animation-play-state: paused; }
+    @keyframes slideX { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+    .tcard { width: 200px; height: 400px; border-radius: 14px; overflow: hidden; flex-shrink: 0; position: relative; cursor: pointer; }
+    .tcard img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; display: block; }
+    .tcard:hover img { transform: scale(1.07); }
+    .tcard::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.35) 0%, transparent 60%); }
+    .benefits-section { padding: 36px 20px 32px; background: linear-gradient(160deg, #0d0d1a, #1a0a1e 50%, #0d0d1a); }
+    .benefits-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; max-width: 760px; margin: 20px auto 0; }
+    .benefit-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09); border-radius: 14px; padding: 24px 20px; position: relative; overflow: hidden; transition: all 0.35s ease; }
+    .benefit-card:hover { transform: translateY(-4px); border-color: rgba(255,100,130,0.3); }
+    .benefit-step { width: 38px; height: 38px; background: linear-gradient(135deg, #ff6482, #c084fc); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800; color: white; margin-bottom: 12px; }
+    .benefit-title { font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 7px; }
+    .benefit-desc { font-size: 14px; color: rgba(255,255,255,0.55); line-height: 1.6; }
+    .get-started-wrap { text-align: center; margin-top: 24px; }
+    .get-started-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: linear-gradient(135deg, #ff6482, #c084fc); color: white; font-size: 16px; font-weight: 700; padding: 15px 0; width: 100%; max-width: 420px; border-radius: 100px; border: none; cursor: pointer; font-family: 'Poppins', sans-serif; box-shadow: 0 6px 22px rgba(255,100,130,0.35); transition: all 0.3s; }
+    .get-started-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(255,100,130,0.5); }
+    .know-coach-section { padding: 36px 20px 32px; background: #0d0d1a; text-align: center; }
+    .coach-stats-vertical { display: flex; flex-direction: column; gap: 0; max-width: 440px; margin: 0 auto 22px; border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; overflow: hidden; }
+    .cs-v-item { display: flex; align-items: center; justify-content: space-between; padding: 20px 36px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .cs-v-item:last-child { border-bottom: none; }
+    .cs-v-num { font-size: 2rem; font-weight: 900; background: linear-gradient(135deg, #ff8fab, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; }
+    .cs-v-lbl { font-size: 14px; color: rgba(255,255,255,0.55); margin-top: 4px; }
+    .cs-v-icon { font-size: 2rem; opacity: 0.85; }
+    .your-time-card { background: linear-gradient(135deg, rgba(255,100,130,0.10), rgba(192,132,252,0.10)); border: 1px solid rgba(255,100,130,0.22); border-radius: 16px; padding: 26px 20px; max-width: 480px; margin: 0 auto; overflow: hidden; box-sizing: border-box; width: 100%; }
+    .your-time-title { font-size: 21px; font-weight: 800; color: #fff; margin-bottom: 18px; }
+    .your-time-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 100%; }
+    .yt-stat { text-align: center; padding: 16px 10px; background: rgba(255,255,255,0.05); border-radius: 12px; min-width: 0; overflow: hidden; }
+    .yt-num { font-size: clamp(1.2rem, 4vw, 1.9rem); font-weight: 900; background: linear-gradient(135deg, #ff8fab, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; word-break: break-all; }
+    .yt-lbl { font-size: 13px; color: rgba(255,255,255,0.55); margin-top: 6px; }
+    .faq-section { padding: 36px 20px 32px; background: linear-gradient(160deg, #0d0d1a, #1a0a1e 50%, #0d0d1a); }
+    .faq-list { max-width: 700px; margin: 20px auto 0; }
+    .faq-item { border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .faq-q { width: 100%; background: none; border: none; text-align: left; padding: 16px 6px; font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.9); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 14px; transition: color 0.2s; }
+    .faq-q:hover { color: #ff8fab; }
+    .faq-icon { width: 26px; height: 26px; border-radius: 50%; background: rgba(255,100,130,0.1); border: 1.5px solid rgba(255,100,130,0.3); color: #ff8fab; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; flex-shrink: 0; transition: all 0.3s; }
+    .faq-item.open .faq-icon { background: #ff6482; border-color: #ff6482; color: white; transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s; padding: 0 6px; font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.7; }
+    .faq-item.open .faq-a { max-height: 160px; padding-bottom: 14px; }
+    .cta-section { padding: 36px 20px 32px; background: #0d0d1a; }
+    .cta-inner { max-width: 820px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+    .cta-left h2 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; color: #fff; margin-bottom: 8px; }
+    .cta-left h2 .grad { background: linear-gradient(135deg, #ff6482, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .cta-left p { font-size: 16px; color: rgba(255,255,255,0.55); margin-bottom: 18px; line-height: 1.6; }
+    .how-to-box { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+    .how-to-title { font-size: 17px; font-weight: 700; color: #ff8fab; margin-bottom: 12px; }
+    .how-to-line { font-size: 16px; color: rgba(255,255,255,0.75); line-height: 2.1; }
+    .how-to-line strong { color: #fff; }
+    .wa-number-box { display: flex; align-items: center; gap: 8px; background: rgba(37,211,102,0.08); border: 1px solid rgba(37,211,102,0.22); border-radius: 10px; padding: 9px 14px; margin-bottom: 12px; }
+    .wa-number-box span { font-size: 14px; color: rgba(255,255,255,0.9); font-weight: 700; }
+    .wa-msg-btn { display: flex; align-items: center; justify-content: center; gap: 8px; background: linear-gradient(135deg, #ff6482, #c084fc); color: white; font-size: 17px; font-weight: 700; padding: 15px; border-radius: 10px; border: none; cursor: pointer; font-family: 'Poppins', sans-serif; box-shadow: 0 4px 16px rgba(255,100,130,0.3); transition: all 0.3s; width: 100%; margin-bottom: 12px; }
+    .wa-msg-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(255,100,130,0.45); }
+    .within-box { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 14px 16px; }
+    .within-title { font-size: 15px; color: rgba(255,255,255,0.45); margin-bottom: 10px; }
+    .within-item { display: flex; align-items: center; gap: 8px; font-size: 15px; color: rgba(255,255,255,0.75); padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .within-item:last-child { border-bottom: none; }
+    .within-check { width: 20px; height: 20px; background: linear-gradient(135deg, #ff6482, #c084fc); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0; }
+    .cta-right { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 22px 18px; }
+    .cta-right-title { font-size: 16px; font-weight: 800; color: #fff; text-align: center; margin-bottom: 4px; }
+    footer { padding: 24px 20px 36px; background: #070710; text-align: center; border-top: 1px solid rgba(255,255,255,0.06); }
+    .footer-tagline { font-size: 14px; color: #ffffff; margin-bottom: 5px; font-weight: 500; }
+    .footer-sign { font-size: 14px; color: #ffffff; margin-bottom: 14px; }
+    footer a { color: rgba(255,255,255,0.5); font-size: 13px; text-decoration: none; transition: color 0.2s; font-weight: 500; }
+    footer a:hover { color: #ff8fab; }
+    .footer-powered { font-size: 14px; font-weight: 600; color: #ffffff; margin-top: 8px; }
+    .sr { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .sr.in { opacity: 1; transform: translateY(0); }
+    @media (max-width: 640px) { .benefits-grid { grid-template-columns: 1fr; } .cta-inner { grid-template-columns: 1fr; } .your-time-grid { grid-template-columns: 1fr 1fr; gap: 10px; } .form-box { padding: 26px 18px; } .stats-vertical, .coach-stats-vertical { max-width: 100%; } .wa-connect-btn, .get-started-btn { max-width: 100%; } }
+  </style>
 </head>
 <body>
 
 <!-- PRIVACY MODAL -->
-<div class="ov" id="privacyModal">
-  <div class="pbox">
-    <button class="mcls" onclick="closeM('privacyModal')">×</button>
-    <h3>Information We Collect</h3><p>Name, phone you provide via WhatsApp or form.</p>
-    <h3>How We Use It</h3><p>Only to share program info and support. Never sold to third parties.</p>
-    <h3>Your Rights</h3><p>Access, correct or delete your info anytime.</p>
-    <h3>Disclaimer</h3><p>Results depend on personal effort. Earnings vary.</p>
+<div class="modal-overlay" id="privacyModal">
+  <div class="privacy-box">
+    <button class="modal-close" onclick="closeModal('privacyModal')">×</button>
+    <h3>Information We Collect</h3>
+    <p>We collect information you provide directly to us, such as your name, phone number, and email address when you contact us through WhatsApp or other channels.</p>
+    <h3>How We Use Your Information</h3>
+    <p>Your information is used solely to communicate with you about our training programs, provide customer support, and send updates about courses you've expressed interest in.</p>
+    <h3>Data Protection</h3>
+    <p>We implement appropriate security measures to protect your personal information. Your data is never sold or shared with third parties for marketing purposes.</p>
+    <h3>Your Rights</h3>
+    <p>You have the right to access, correct, or delete your personal information at any time. Contact us to exercise these rights or for any privacy-related concerns.</p>
+    <p class="privacy-footer">By using our services, you agree to this privacy policy. Last updated: December 2024</p>
   </div>
 </div>
 
 <!-- FORM MODAL -->
-<div class="ov" id="formModal">
-  <div class="fbox">
-    <button class="mcls" onclick="closeM('formModal')">×</button>
-    <div class="ftitle">🚀 Start Your Journey</div>
-    <div class="fsub">Fill your details to connect with Tasnim.</div>
-    <input type="hidden" id="formSource" value=""/>
-    <div class="fg"><label>Full Name *</label><input type="text" id="m-name" placeholder="Your full name"/></div>
-    <div class="fg"><label>Phone *</label><input type="tel" id="m-phone" placeholder="10-digit number" maxlength="10" inputmode="numeric"/></div>
-    <div class="frow">
-      <div class="fg"><label>Age *</label><input type="number" id="m-age" placeholder="Age" min="15" max="60"/></div>
-      <div class="fg"><label>Gender *</label><select id="m-gender"><option value="">Select</option><option>Female</option><option>Male</option><option>Other</option></select></div>
+<div class="modal-overlay" id="formModal">
+  <div class="form-box">
+    <button class="modal-close" onclick="closeModal('formModal')">×</button>
+    <div class="form-box-title">🚀 Start Your Journey</div>
+    <!-- CHANGE: Replace "Mantasha" with client name -->
+    <div class="form-box-sub">Fill details — Tasnim will reach out within 24 hrs</div>
+    <input type="hidden" id="formSource" value="" />
+    <div class="fgroup">
+      <label>Full Name *</label>
+      <input type="text" id="m-name" placeholder="Your full name" />
     </div>
-    <div class="fg"><label>Profession *</label><select id="m-profession"><option value="">Select</option><option>Student</option><option>Housewife</option><option>Working Professional</option><option>Other</option></select></div>
-    <button class="fsend" id="sendBtn" onclick="submitForm()">📲 Send to WhatsApp</button>
-    <div class="fstatus" id="formStatus"></div>
+    <div class="fgroup">
+      <label>Phone *</label>
+      <input type="tel" id="m-phone" placeholder="Enter 10-digit number" maxlength="10" inputmode="numeric" pattern="[0-9]{10}" />
+    </div>
+    <div class="frow">
+      <div class="fgroup">
+        <label>Age *</label>
+        <input type="number" id="m-age" placeholder="Age" min="15" max="60" />
+      </div>
+      <div class="fgroup">
+        <label>Gender *</label>
+        <select id="m-gender">
+          <option value="">Select</option>
+          <option>Female</option>
+          <option>Male</option>
+          <option>Other</option>
+        </select>
+      </div>
+    </div>
+    <div class="fgroup">
+      <label>Profession *</label>
+      <select id="m-profession">
+        <option value="">Select</option>
+        <option>Student</option>
+        <option>Housewife</option>
+        <option>Working Professional</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <button class="form-send-btn" id="sendBtn" onclick="submitForm()">📲 Send to WhatsApp</button>
+    <div class="form-status" id="formStatus"></div>
   </div>
 </div>
 
-<!-- ══ HERO ══ -->
-<section id="hero">
-  <div class="hero-tag"><span class="live-dot"></span> Women-Only Skill Seekers Community</div>
-  <div class="hero-count"><span id="heroCount">0</span>+</div>
-  <h1 class="hero-h">Women <span class="pink">Rising Together</span></h1>
-  <p class="hero-sub">From Zero to Online Earner ✨</p>
-  <p class="scroll-hint">👇 See My Journey 👇</p>
-</section>
-
-<!-- ══ JOURNEY ══ -->
-<section id="journey">
-  <div class="sec-label">💫 My Journey</div>
-  <div class="journey-img sr">
-    <img src="https://i.ibb.co/Mys9F3cD/Whats-App-Image-2026-04-27-at-14-48-46.jpg" alt="Journey" onerror="this.parentElement.innerHTML='<div class=journey-img-ph>📸 Add Journey Image</div>'"/>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge"><div class="live-dot"></div>🚀 Online Earning Community</div>
+  <div class="hero-count" id="heroCount">Connect with 0 People</div>
+  <div class="hero-label">Rising Together • From Zero to Online Earner</div>
+  <div class="hero-tagline">Learn<span>•</span>Earn<span>•</span>Grow</div>
+  <div class="journey-block">
+    <div class="journey-label">👇 See My Journey 👇</div>
+    <div class="yt-embed" id="ytEmbed">
+     <img src="https://i.ibb.co/Mys9F3cD/Whats-App-Image-2026-04-27-at-14-48-46.jpg" alt="My Journey"
+      <img src="JOURNEY_IMAGE_URL" alt="My Journey" onerror="this.parentElement.innerHTML='<div style=\'width:100%;aspect-ratio:16/9;background:rgba(255,255,255,0.04);border:2px dashed rgba(255,100,130,0.3);border-radius:14px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.3);font-size:13px;\'>📸 Add photo URL</div>'" />
+    </div>
   </div>
-</section>
-
-<!-- ══ COACH ══ -->
-<section id="coach">
-  <div class="coach-sec-label">💫 Your Coach</div>
-  <h2 class="coach-name sr">Hi, I'm <span>Tasnim Fatima</span></h2>
-  <div class="coach-chips sr">
-    <div class="chip">✅ Entrepreneur</div>
-    <div class="chip">💻 Freelancer</div>
-    <div class="chip">🎯 Online-Skills Coach</div>
-  </div>
-  <div class="vision-box sr">
-    <div class="vision-title">🎯 My Vision:</div>
-    <div class="vision-text">"Empower Women to Empower Themselves"</div>
-  </div>
-  <button class="wa-btn-coach sr" onclick="openFormModal('Coach CTA')">📲 Connect on WhatsApp</button>
-  <div class="coach-stats sr">
-    <div class="cstat"><div class="cstat-n counter" data-target="3" data-suffix="+">0+</div><div class="cstat-l">Years of Experience</div></div>
-    <div class="cstat"><div class="cstat-n counter" data-target="2000" data-suffix="+">0+</div><div class="cstat-l">Women Helped</div></div>
-    <div class="cstat"><div class="cstat-n">₹<span class="counter" data-target="100000" data-suffix="+">0</span></div><div class="cstat-l">Monthly Earning</div></div>
-  </div>
-</section>
-
-<!-- ══ TESTIMONIALS ══ -->
-<section id="testi">
-  <div class="testi-head sr">
-    <h2 class="sec-h">✨ Real <span>Success Stories</span></h2>
-    <p class="sec-p">100% real feedback from women in our community</p>
-  </div>
-  <div class="mou"><div class="mtr" id="row1"></div></div>
-</section>
-
-<!-- ══ BENEFITS ══ -->
-<section id="benefits">
-  <div class="sec-label sr">What Happens When You Join?</div>
-  <div class="ben-cards">
-    <div class="bc sr"><div class="bc-num">1</div><div class="bc-title">Instant Connection</div><p class="bc-desc">Direct WhatsApp access to me</p></div>
-    <div class="bc sr" style="transition-delay:.06s"><div class="bc-num">2</div><div class="bc-title">Complete Access</div><p class="bc-desc">Proven step-by-step training system</p></div>
-    <div class="bc sr" style="transition-delay:.12s"><div class="bc-num">3</div><div class="bc-title">Daily Mentorship</div><p class="bc-desc">24/7 support & community access</p></div>
-    <div class="bc sr" style="transition-delay:.18s"><div class="bc-num">4</div><div class="bc-title">Start Earning</div><p class="bc-desc">Begin from Week 1 confidently</p></div>
-  </div>
-  <button class="join-btn sr" onclick="openFormModal('Benefits CTA')">📲 Get Started Now</button>
-</section>
-
-<!-- ══ KNOW COACH ══ -->
-<section id="know">
-  <div class="sec-label sr">Know Your Coach</div>
-  <div class="know-stats sr">
-    <div class="ks"><div class="ks-icon">⭐</div><div class="ks-n counter" data-target="3" data-suffix="+">0+</div><div class="ks-l">Years of Experience</div></div>
-    <div class="ks"><div class="ks-icon">👥</div><div class="ks-n counter" data-target="2000" data-suffix="+">0+</div><div class="ks-l">Women Reached</div></div>
-  </div>
-  <div class="earn-box sr">
-    <div class="earn-title">🔥 Now it's YOUR time</div>
-    <div class="earn-grid">
-      <div class="ebox"><div class="eval counter" data-target="1600000" data-prefix="₹" data-format="full">₹0</div><div class="elbl">Earned by Women</div></div>
-      <div class="ebox"><div class="eval counter" data-target="500" data-suffix="+">0+</div><div class="elbl">Earning ₹50K–₹1L</div></div>
+  <div class="coach-inner-wrap">
+    <span class="coach-label">💫 Your Coach</span>
+    <!-- CHANGE: Client name -->
+    <h2 class="coach-name">Hi, I'm Tasnim Fatima</h2>
+    <div class="coach-roles">
+      <div class="coach-role">✅ Entrepreneur</div>
+      <div class="coach-role">💻 Freelancer</div>
+      <div class="coach-role">🎯 Online-Skills Coach</div>
+    </div>
+    <div class="vision-card sr">
+      <div class="vision-title">🎯 My Mission:</div>
+      <div class="vision-text">"Every Woman Deserves Financial Freedom"</div>
+    </div>
+    <button class="wa-connect-btn sr" onclick="openFormModal('Connect Button')">
+      📲 Connect on WhatsApp
+    </button>
+    <div class="stats-vertical sr">
+      <!-- CHANGE: data-target numbers -->
+      <div class="stat-v-item"><div class="stat-v-left"><div class="stat-v-num counter" data-target="3" data-suffix="+">0+</div><div class="stat-v-lbl">Years of Experience</div></div><div class="stat-v-icon">⭐</div></div>
+      <div class="stat-v-item"><div class="stat-v-left"><div class="stat-v-num counter" data-target="2000" data-suffix="+">0+</div><div class="stat-v-lbl">Students Helped</div></div><div class="stat-v-icon">👥</div></div>
+      <div class="stat-v-item"><div class="stat-v-left"><div class="stat-v-num counter" data-target="100000" data-prefix="₹" data-format="full">₹0</div><div class="stat-v-lbl">Monthly Earning</div></div><div class="stat-v-icon">💰</div></div>
     </div>
   </div>
 </section>
 
-<!-- ══ FAQ ══ -->
-<section id="faq">
-  <div class="faq-inner">
-    <div class="sec-label sr" style="justify-content:center;margin-bottom:18px;">Frequently Asked Questions</div>
-    <div class="fi sr"><button class="fq" onclick="tFaq(this)">What kind of work will I be doing? <span class="fic">+</span></button><div class="fa">Digital skills: Website Design, Graphics, Editing, Content Creation, Monetization, etc. 100% legitimate.</div></div>
-    <div class="fi sr"><button class="fq" onclick="tFaq(this)">Is this program legitimate & safe? <span class="fic">+</span></button><div class="fa">Genuine training. 2000+ women earning consistently. Verify credentials.</div></div>
-    <div class="fi sr"><button class="fq" onclick="tFaq(this)">How much time daily? <span class="fic">+</span></button><div class="fa">Just 1-2 hours daily. Flexible for everyone.</div></div>
-    <div class="fi sr"><button class="fq" onclick="tFaq(this)">When will I start earning? <span class="fic">+</span></button><div class="fa">Within 1 month. Sustainable income in 1-2 months.</div></div>
-    <div class="fi sr"><button class="fq" onclick="tFaq(this)">Any prior experience needed? <span class="fic">+</span></button><div class="fa">No experience needed! Step-by-step guidance provided.</div></div>
-    <div class="fi sr"><button class="fq" onclick="tFaq(this)">What support after joining? <span class="fic">+</span></button><div class="fa">Daily mentorship, 24/7 WhatsApp, weekly calls & women-only community.</div></div>
-    <div class="fi sr"><button class="fq" onclick="tFaq(this)">Any investment required? <span class="fic">+</span></button><div class="fa">Nominal fee covers everything. No hidden costs.</div></div>
-    <div class="fi sr"><button class="fq" onclick="tFaq(this)">Can I do this alongside job/studies? <span class="fic">+</span></button><div class="fa">Yes! Designed for busy women. Learn in free time.</div></div>
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <div class="section-header sr">
+    <h2 class="section-title-main size-lg">✨ Real <span class="highlight">Success Stories</span></h2>
+    <p class="section-subtitle">100% real feedback from real students</p>
+  </div>
+  <div class="marquee-outer"><div class="marquee-inner" id="row1"></div></div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits-section">
+  <div class="section-header sr">
+    <h2 class="section-title-main size-sm">What Happens When <span class="highlight">You Join?</span></h2>
+  </div>
+  <div class="benefits-grid">
+    <div class="benefit-card sr"><div class="benefit-step">1</div><div class="benefit-title">Instant Connection</div><p class="benefit-desc">Direct WhatsApp access to me</p></div>
+    <div class="benefit-card sr" style="transition-delay:.07s"><div class="benefit-step">2</div><div class="benefit-title">Complete Access</div><p class="benefit-desc">Proven step-by-step training system</p></div>
+    <div class="benefit-card sr" style="transition-delay:.12s"><div class="benefit-step">3</div><div class="benefit-title">Daily Mentorship</div><p class="benefit-desc">24/7 support & community access</p></div>
+    <div class="benefit-card sr" style="transition-delay:.17s"><div class="benefit-step">4</div><div class="benefit-title">Start Earning</div><p class="benefit-desc">Begin from Week 1 confidently</p></div>
+  </div>
+  <div class="get-started-wrap sr">
+    <button class="get-started-btn" onclick="openFormModal('Get Started Button')">📲 Get Started Now</button>
   </div>
 </section>
 
-<!-- ══ CTA ══ -->
-<section id="cta">
-  <div class="cta-box">
-    <h2 class="cta-h sr">Ready to <span>Transform Your Life?</span></h2>
-    <p class="cta-p sr">Join thousands of women on their journey to financial independence</p>
-    <div class="how-box sr">
-      <div class="how-title">📲 How to Start?</div>
-      <div class="how-row">Simply message me on WhatsApp:</div><br/>
-      <div class="how-row"><strong>📝 Name:</strong> Full Name</div>
-      <div class="how-row"><strong>🎂 Age:</strong> Your Age</div>
-      <div class="how-row"><strong>💼 Profession:</strong> Current Status</div>
+<!-- KNOW YOUR COACH -->
+<section class="know-coach-section">
+  <div class="section-header sr">
+    <h2 class="section-title-main size-xl">Know Your <span class="highlight">Coach</span></h2>
+  </div>
+  <div class="coach-stats-vertical sr">
+    <!-- CHANGE: data-target numbers -->
+    <div class="cs-v-item"><div><div class="cs-v-num counter" data-target="3" data-suffix="+">0+</div><div class="cs-v-lbl">Years of Experience</div></div><div class="cs-v-icon">⭐</div></div>
+    <div class="cs-v-item"><div><div class="cs-v-num counter" data-target="1000" data-suffix="+">0+</div><div class="cs-v-lbl">Entrepreneurs Reached</div></div><div class="cs-v-icon">👥</div></div>
+  </div>
+  <div class="your-time-card sr">
+    <div class="your-time-title">🔥 Now it's YOUR time</div>
+    <div class="your-time-grid">
+      <!-- CHANGE: data-target numbers -->
+      <div class="yt-stat"><div class="yt-num counter" data-target="1600000" data-prefix="₹" data-format="full">₹0</div><div class="yt-lbl">Earned by Students</div></div>
+      <div class="yt-stat"><div class="yt-num counter" data-target="500" data-suffix="+">0+</div><div class="yt-lbl">Earning ₹50K–₹1L</div></div>
     </div>
-    <div class="num-row sr"><span>📌 Save My Number: <strong>8521732327</strong></span></div>
-    <button class="wa-cta-btn sr" onclick="openFormModal('CTA Button')">📲 Message on WhatsApp Now</button>
-    <a href="https://www.instagram.com/tasnimofficial__" target="_blank" rel="noopener" class="ig-btn sr">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-      Follow on Instagram
-    </a>
-    <a href="#" class="priv sr" onclick="openM('privacyModal');return false;">🔒 Privacy Policy</a>
-    <div class="within-box sr">
-      <div class="within-title">⏳ Within 24 hours:</div>
-      <div class="within-row">📋 Complete Details</div>
-      <div class="within-row">🗺 Clear Roadmap</div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="section-header sr">
+    <h2 class="section-title-main size-md">Frequently Asked <span class="highlight">Questions</span></h2>
+  </div>
+  <div class="faq-list sr">
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What kind of work will I be doing? <span class="faq-icon">+</span></button><div class="faq-a">Digital skills: Website Design, Graphics, Editing, Content Creation, Monetization, etc. 100% legitimate.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Is this program legitimate & safe? <span class="faq-icon">+</span></button><div class="faq-a">Genuine training. 2000+ students earning consistently. Verify credentials.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How much time daily? <span class="faq-icon">+</span></button><div class="faq-a">Just 1-2 hours daily. Flexible for everyone.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">When will I start earning? <span class="faq-icon">+</span></button><div class="faq-a">Within 1 month. Sustainable income in 1-2 months.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Any prior experience needed? <span class="faq-icon">+</span></button><div class="faq-a">No experience needed! Step-by-step guidance provided.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What support after joining? <span class="faq-icon">+</span></button><div class="faq-a">Daily mentorship, 24/7 WhatsApp, weekly calls & community.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Any investment required? <span class="faq-icon">+</span></button><div class="faq-a">Nominal fee covers everything. No hidden costs.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I do this alongside job/studies? <span class="faq-icon">+</span></button><div class="faq-a">Yes! Designed for busy people. Learn in free time.</div></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <div class="cta-left sr">
+      <h2>Ready to <span class="grad">Transform Your Life?</span></h2>
+      <p>Join thousands on their journey to financial independence</p>
+      <div class="how-to-box">
+        <div class="how-to-title">📲 How to Start?</div>
+        <div class="how-to-line">Simply message me on WhatsApp:</div><br/>
+        <div class="how-to-line"><strong>📝 Name:</strong> Full Name</div>
+        <div class="how-to-line"><strong>🎂 Age:</strong> Your Age</div>
+        <div class="how-to-line"><strong>💼 Profession:</strong> Current Status</div>
+      </div>
+      <!-- CHANGE: Client WhatsApp number -->
+      <div class="wa-number-box">
+        <span>📌 Save My Number: <strong>8521732327</strong></span>
+      </div>
+      <button class="wa-msg-btn" onclick="openFormModal('Message Button')">
+        📲 Message on WhatsApp Now
+      </button>
+      <div class="within-box">
+        <div class="within-title">⏳ Within 24 hours:</div>
+        <div class="within-item"><div class="within-check">✓</div> 📋 Complete Details</div>
+        <div class="within-item"><div class="within-check">✓</div> 🗺 Clear Roadmap</div>
+      </div>
+    </div>
+    <div class="cta-right sr" style="transition-delay:.1s">
+      <div class="cta-right-title">Stay Connected 📸</div>
+      <!-- CHANGE: Client Instagram username -->
+      <a href="https://www.instagram.com/tasnimofficial__" target="_blank" rel="noopener"
+         style="display:flex;align-items:center;justify-content:center;gap:9px;background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:white;font-size:14px;font-weight:700;padding:14px;border-radius:10px;text-decoration:none;transition:all 0.3s;margin-bottom:14px;"
+         onmouseover="this.style.opacity='0.88';this.style.transform='translateY(-2px)'"
+         onmouseout="this.style.opacity='1';this.style.transform='translateY(0)'">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        Follow on Instagram
+      </a>
+      <div style="text-align:center;margin-top:6px;">
+        <a href="#" onclick="openModal('privacyModal');return false;"
+           style="color:rgba(255,255,255,0.4);font-size:13px;text-decoration:none;transition:color 0.2s;"
+           onmouseover="this.style.color='#ff8fab'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">
+          🔒 Privacy Policy
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="f-tag">🌟 Empower with skills • 🌈 Support every vision • 🚀 Dreams to direction</div>
-  <div class="f-sign">❤️ With Strength & Sincerity, Tasnim Fatima</div>
-  <div class="f-pow">Powered by <strong>Osama · AdDestini</strong></div>
+  <div class="footer-tagline">🌟 Empower with skills • 🌈 Support every vision • 🚀 Dreams to direction</div>
+  <!-- CHANGE: Client name -->
+  <div class="footer-sign">❤️ With Strength & Sincerity, Tasnim Fatima</div>
+  <div class="footer-powered">Powered by <strong>Osama · AdDestini</strong></div>
 </footer>
 
 <script>
-const SHEET_URL='https://script.google.com/macros/s/AKfycbx5KOGF6wouUS-vfwFxz2NmmLSPhAF6qI3HPKYG1R2QoPRiwSmJdvAdVVA4Qu1aBSIw/exec';
-const WA_NUMBER='918521732327';
-const imgs=[
-  'https://i.ibb.co/pj4dLPK3/11.jpg',
-  'https://i.ibb.co/4RNmWbG5/12.jpg',
-  'https://i.ibb.co/8gx1Pgg0/13.jpg',
-  'https://i.ibb.co/Z6d6TxZc/14.jpg',
-  'https://i.ibb.co/GfTNP9tc/15.jpg',
-  'https://i.ibb.co/v6dqChfz/16.jpg'
-];
+  /* ══════════════════════════════════════
+     CHANGE THESE FOR EVERY NEW CLIENT
+  ══════════════════════════════════════ */
+  const SHEET_URL  = 'https://script.google.com/macros/s/AKfycbx5KOGF6wouUS-vfwFxz2NmmLSPhAF6qI3HPKYG1R2QoPRiwSmJdvAdVVA4Qu1aBSIw/exec';
+  const YOUTUBE_ID = null; // Not used — image version
+  const WA_NUMBER  = '918521732327'; // 91 + 10 digit number
 
-function openM(id){document.getElementById(id).classList.add('on');document.body.style.overflow='hidden';}
-function closeM(id){document.getElementById(id).classList.remove('on');document.body.style.overflow='';}
-function openFormModal(src){clearF();document.getElementById('formSource').value=src||'';openM('formModal');}
-document.querySelectorAll('.ov').forEach(o=>o.addEventListener('click',function(e){if(e.target===this)closeM(this.id);}));
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeM('formModal');closeM('privacyModal');}});
-function clearF(){['m-name','m-phone','m-age','m-gender','m-profession'].forEach(id=>document.getElementById(id).value='');document.getElementById('formStatus').textContent='';const b=document.getElementById('sendBtn');b.disabled=false;b.textContent='📲 Send to WhatsApp';}
-document.getElementById('m-phone').addEventListener('input',function(){this.value=this.value.replace(/\D/g,'').slice(0,10);});
+  /* ══════════════════════════════════════
+     CHANGE: Client's testimonial images
+  ══════════════════════════════════════ */
+  const imgs = [
+    'https://i.ibb.co/pj4dLPK3/11.jpg',
+    'https://i.ibb.co/4RNmWbG5/12.jpg',
+    'https://i.ibb.co/8gx1Pgg0/13.jpg',
+    'https://i.ibb.co/Z6d6TxZc/14.jpg',
+    'https://i.ibb.co/GfTNP9tc/15.jpg',
+    'https://i.ibb.co/v6dqChfz/16.jpg'
+  ];
 
-async function submitForm(){
-  const name=document.getElementById('m-name').value.trim(),phone=document.getElementById('m-phone').value.trim(),age=document.getElementById('m-age').value.trim(),gender=document.getElementById('m-gender').value,profession=document.getElementById('m-profession').value,source=document.getElementById('formSource').value;
-  if(!name||!phone||!age||!gender||!profession){document.getElementById('formStatus').textContent='⚠️ Please fill all fields.';return;}
-  if(phone.length!==10){document.getElementById('formStatus').textContent='⚠️ Enter valid 10-digit number.';return;}
-  const b=document.getElementById('sendBtn');b.disabled=true;b.textContent='Opening...';
-  saveSheet({name,phone,age,gender,profession,source});
-  if(typeof fbq!=='undefined')fbq('track','Lead');
-  const msg=`Hello Ma'am,\n\nI am interested in this work. Here are my details:\n\nName: ${name}\nPhone: ${phone}\nAge: ${age}\nGender: ${gender}\nProfession: ${profession}\n\nPlease share next steps. Thank you!`;
-  setTimeout(()=>{window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`,'_blank');setTimeout(()=>closeM('formModal'),600);},600);
-}
-async function saveSheet(d){
-  if(!SHEET_URL||SHEET_URL.includes('YOUR_'))return;
-  const p='?timestamp='+encodeURIComponent(new Date().toLocaleString('en-IN'))+'&name='+encodeURIComponent(d.name)+'&phone='+encodeURIComponent(d.phone)+'&age='+encodeURIComponent(d.age)+'&gender='+encodeURIComponent(d.gender)+'&profession='+encodeURIComponent(d.profession)+'&source='+encodeURIComponent(d.source);
-  try{await fetch(SHEET_URL+p,{method:'GET',mode:'no-cors'});}catch(e){}
-}
+  /* ══ DO NOT CHANGE BELOW THIS LINE ══ */
 
-// Hero counter
-(function(){
-  const el=document.getElementById('heroCount'),target=100000,dur=2400,s=performance.now(),ease=p=>p===1?1:1-Math.pow(2,-10*p);
-  const tick=now=>{const p=Math.min((now-s)/dur,1);el.textContent=Math.floor(ease(p)*target).toLocaleString('en-IN');if(p<1)requestAnimationFrame(tick);};
-  requestAnimationFrame(tick);
-})();
+  // Image version — no YouTube embed needed
 
-// Generic counter
-function animC(el){
-  if(el.dataset.done)return;el.dataset.done='1';
-  const target=parseInt(el.dataset.target),suffix=el.dataset.suffix||'',prefix=el.dataset.prefix||'',fmt=el.dataset.format,dur=target>=100000?2000:1200,s=performance.now(),ease=p=>p===1?1:1-Math.pow(2,-10*p);
-  const tick=now=>{const p=Math.min((now-s)/dur,1),v=Math.floor(ease(p)*target);
-    if(fmt==='full'&&v>=100000)el.textContent=prefix+Math.floor(v/100000)+'L+';
-    else el.textContent=prefix+v.toLocaleString('en-IN')+suffix;
-    if(p<1)requestAnimationFrame(tick);};
-  requestAnimationFrame(tick);
-}
+  function openModal(id)  { document.getElementById(id).classList.add('active'); document.body.style.overflow='hidden'; }
+  function closeModal(id) { document.getElementById(id).classList.remove('active'); document.body.style.overflow=''; }
+  function openFormModal(source) {
+    clearForm();
+    document.getElementById('formSource').value = source || 'Unknown';
+    openModal('formModal');
+  }
+  document.querySelectorAll('.modal-overlay').forEach(o=>{
+    o.addEventListener('click', function(e){ if(e.target===this) closeModal(this.id); });
+  });
+  document.addEventListener('keydown', e=>{ if(e.key==='Escape'){ closeModal('formModal'); closeModal('privacyModal'); } });
 
-// Testimonial marquee
-const row1=document.getElementById('row1');
-[...imgs,...imgs].forEach(src=>{const d=document.createElement('div');d.className='tc';d.innerHTML=`<img src="${src}" alt="Feedback" loading="lazy"/>`;row1.appendChild(d);});
+  function clearForm() {
+    ['m-name','m-phone','m-age','m-gender','m-profession'].forEach(id=>document.getElementById(id).value='');
+    document.getElementById('formStatus').textContent='';
+    const btn=document.getElementById('sendBtn');
+    btn.disabled=false; btn.textContent='📲 Send to WhatsApp';
+  }
 
-// FAQ
-function tFaq(btn){const item=btn.closest('.fi'),isOpen=item.classList.contains('open');document.querySelectorAll('.fi.open').forEach(i=>i.classList.remove('open'));if(!isOpen)item.classList.add('open');}
+  document.getElementById('m-phone').addEventListener('input', function(){
+    this.value=this.value.replace(/\D/g,'').slice(0,10);
+  });
 
-// Scroll reveal + counters
-const obs=new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('.counter').forEach(animC);obs.unobserve(e.target);}});},{threshold:.08});
-document.querySelectorAll('.sr').forEach(el=>obs.observe(el));
-const cobs=new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting){animC(e.target);cobs.unobserve(e.target);}});},{threshold:.3});
-document.querySelectorAll('.counter').forEach(el=>{if(!el.closest('.sr'))cobs.observe(el);});
+  async function submitForm() {
+    const name   = document.getElementById('m-name').value.trim();
+    const phone  = document.getElementById('m-phone').value.trim();
+    const age    = document.getElementById('m-age').value.trim();
+    const gender = document.getElementById('m-gender').value;
+    const prof   = document.getElementById('m-profession').value;
+    const source = document.getElementById('formSource').value;
+
+    if (!name||!phone||!age||!gender||!prof) {
+      document.getElementById('formStatus').style.color='#f87171';
+      document.getElementById('formStatus').textContent='⚠️ Please fill in all fields.';
+      return;
+    }
+    if (phone.length!==10) {
+      document.getElementById('formStatus').style.color='#f87171';
+      document.getElementById('formStatus').textContent='⚠️ Phone number must be exactly 10 digits.';
+      return;
+    }
+
+    const btn=document.getElementById('sendBtn');
+    btn.disabled=true; btn.textContent='Opening...';
+    document.getElementById('formStatus').textContent='';
+
+    // Save to Google Sheet
+    saveToSheet({ name, phone, age, gender, profession: prof, source });
+
+    // Fire Meta Pixel Lead event
+    if (typeof fbq !== 'undefined') fbq('track', 'Lead');
+
+    const msg=`Hello Ma'am,\n\nI am interested in this Work. Here are my details:\n\nName: ${name}\nPhone: ${phone}\nAge: ${age}\nGender: ${gender}\nProfession: ${prof}\n\nPlease share next steps. Thank you!`;
+    setTimeout(()=>{
+      window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`,'_blank');
+      setTimeout(()=>closeModal('formModal'),600);
+    },600);
+  }
+
+  async function saveToSheet(data) {
+    if(!SHEET_URL||SHEET_URL==='YOUR_GOOGLE_APPS_SCRIPT_URL_HERE') return;
+    const params = '?timestamp=' + encodeURIComponent(new Date().toLocaleString('en-IN'))
+      + '&name='       + encodeURIComponent(data.name)
+      + '&phone='      + encodeURIComponent(data.phone)
+      + '&age='        + encodeURIComponent(data.age)
+      + '&gender='     + encodeURIComponent(data.gender)
+      + '&profession=' + encodeURIComponent(data.profession)
+      + '&source='     + encodeURIComponent(data.source);
+    const url = SHEET_URL + params;
+    try { await fetch(url,{method:'GET',mode:'no-cors'}); return; } catch(e){}
+    try {
+      await new Promise(resolve=>{
+        const img=new Image(); img.onload=img.onerror=resolve; img.src=url; setTimeout(resolve,3000);
+      });
+    } catch(e){}
+  }
+
+  const row1=document.getElementById('row1');
+  [...imgs,...imgs].forEach(src=>{ const d=document.createElement('div'); d.className='tcard'; d.innerHTML=`<img src="${src}" alt="Student" loading="lazy"/>`; row1.appendChild(d); });
+
+  function toggleFaq(btn){
+    const item=btn.closest('.faq-item'),isOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+    if(!isOpen) item.classList.add('open');
+  }
+
+  function animateHeroCount(){
+    const el=document.getElementById('heroCount');
+    const target=10000,duration=1600,startTime=performance.now();
+    function easeOutExpo(t){ return t===1?1:1-Math.pow(2,-10*t); }
+    function tick(now){
+      const p=Math.min((now-startTime)/duration,1);
+      el.textContent=`Connect with ${Math.floor(easeOutExpo(p)*target).toLocaleString('en-IN')}+ People`;
+      if(p<1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded',animateHeroCount); } else { animateHeroCount(); }
+
+  function animateCounter(el){
+    if(el.dataset.animated) return; el.dataset.animated='1';
+    const target=parseInt(el.dataset.target),suffix=el.dataset.suffix||'',prefix=el.dataset.prefix||'';
+    const duration=target>=100000?2000:1400,startTime=performance.now();
+    function easeOutExpo(t){ return t===1?1:1-Math.pow(2,-10*t); }
+    function tick(now){
+      const p=Math.min((now-startTime)/duration,1);
+      el.textContent=prefix+Math.floor(easeOutExpo(p)*target).toLocaleString('en-IN')+suffix;
+      if(p<1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  const srObs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); e.target.querySelectorAll('.counter').forEach(animateCounter); srObs.unobserve(e.target); } });
+  },{threshold:0.12});
+  document.querySelectorAll('.sr').forEach(el=>srObs.observe(el));
+  const cObs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ animateCounter(e.target); cObs.unobserve(e.target); } });
+  },{threshold:0.4});
+  document.querySelectorAll('.counter').forEach(el=>{ if(!el.closest('.sr')) cObs.observe(el); });
 </script>
 </body>
 </html>
